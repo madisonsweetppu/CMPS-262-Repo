@@ -1,2 +1,2 @@
-# CMPS-262-Repo
+# CMPS262Repo
 Class Work
