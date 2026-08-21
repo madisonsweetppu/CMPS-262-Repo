@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>My Personal Page</title>
+    <style>
+        /* Center headers*/
+        h3, h4 {
+            text-align: center;
+        }
+/* Table Style*/
+        table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px;
+     }
+     th, td {
+        border: 1px solid #dddddd;
+        padding: 12px;
+     }
+/* img style */
+     .gallery-row {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
+        gap: 15px;
+        margin-bottom: 30px;
+     }
+
+     .image-container {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 8px;
+     }
+
+     .image-container img {
+        width:100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        display: block;
+     }
+
+     .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #00d2ff;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     }
+
+     /* Navigation bar style */
+     ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #7f8283;
+        display: flex;
+        justify-content: center;
+     }
+
+     ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px 40px;
+        text-decoration: none;
+        font-size: 20px;
+     }
+
+     ul li a:hover {
+        background-color: #1a2530;
+     }
+
+/* Classes */
+        .flex-container {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .flex-column {
+            flex: 1;
+        }
+
+       .flex-column h2 {
+            margin-bottom: 10px;
+            color: rgb(205, 97, 115);
+        }
+
+       .flex-column ul {
+            list-style-type: disc;
+            background-color: transparent;
+            display: block;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+       .flex-column li {
+            margin-bottom: 5px;
+        }
+
+        body {
+            background-color: rgb(141, 178, 237);
+            font-family: Arial, sans-serif;
+        }
+
+/* Media container style */
+        .media-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .image-content {
+            flex:1;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#aboutmes">About Me</a></li>
+         <li><a href="#classes">Classes</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="media-container">
+            <div class="text-content">
+                <h1>Welcome, I'm Madison Sweet</h1>
+                <p>Applied Computer Science Student At Point Park University</p>
+            </div>
+            <div class="image-content">
+                <img src="../Images/AboutMe.jpg" width="300" height="300" alt="Madison Sweet">
+            </div>
+        </div>
+        
+    <div style="background-color:rgb(230, 125, 230)">
+        <h4 style="font-size: 30px;">Interests</h4>
+    </div>
+
+    
+     <div class="gallery-row">
+
+    <div class="image-container">
+        <img src="../Images/camera.avif">
+        <div class="overlay-text">Photography</div>
+    </div>
+
+    <div class="image-container">
+        <img src=../Images/drawing.JPG>
+        <div class="overlay-text">Drawing</div>
+        </div>
+
+    <div class="image-container">
+        <img src="../Images/book.avif">
+        <div class="overlay-text">Reading</div>
+    </div>
+
+    <div class="image-container">
+        <img src="../Images/crochet.webp">
+        <div class="overlay-text">Crochet</div>
+    </div>
+
+    </div>
+
+
+     <div>
+        <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Photography</th>
+                <th>Drawing</th>
+                <th>Reading</th>
+                <th>Crochet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Favorite</strong></td>
+                <td>Landscape</td>
+                <td>Fan Art</td>
+                <td>The One and Only Ivan</td>
+                <td>Blankets</td>
+            </tr>
+            <tr>
+                <td><strong>Goal</strong></td>
+                <td>Animals</td>
+                <td>Portaits</td>
+                <td>Read 2 books a month</td>
+                <td>Amigurumi(stuffed animals)</td>
+            </tr>
+            </tbody>
+        </table>
+     </div>
+     
+     <div style="background-color:rgb(247, 146, 247)">
+        <h3 style="font-size: 30px;">Classes</h3>
+     </div>
+
+     <div class="flex-container">
+        <div class="flex-column">
+            <h2>Summer II</h2>
+            <ul>
+                <li> CMPS 262 Advanced Programming</li>
+            </ul>
+        </div>
+        <div class="flex-column">
+            <h2>Fall I</h2>
+            <ul>
+                <li>CMPS 161 Networking and Security</li>
+                <li>CMPS 261 Server Management</li>
+            </ul>
+        </div>
+     </div>
+
+    <div style="background-color:rgb(247, 146, 247)">
+        <h4 style="font-size: 30px;">Contact Me</h4>
+     </div>
+     <p>Email: mbsweet@pointpark.edu</p>
+
+    </body>
+</html>
